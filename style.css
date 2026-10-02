@@ -1,0 +1,92 @@
+:root{--or:#de7f1f;--or2:#ff8f1f;--mar:#7d2a1e;--teal:#00b3c0;--ink:#1d1d1d;--cream:#fbf5ef}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Noto Sans Thai",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit}
+:focus-visible{outline:3px solid #000;outline-offset:2px}
+
+/* header + เมนู */
+header{background:var(--or);color:#fff;display:flex;align-items:center;gap:24px;padding:14px 28px;cursor:pointer}
+.logo{width:96px;height:96px;flex:none;border-radius:50%;background:#fff;color:#a3281d;border:4px solid #a3281d;display:grid;place-items:center;font-weight:700;font-size:13px;text-align:center;line-height:1.2}
+header h1{font-weight:300;font-size:clamp(16px,2.4vw,28px);line-height:1.35}
+nav{display:flex;gap:16px;padding:10px 28px;flex-wrap:wrap}
+nav button{flex:1 1 150px;font:500 clamp(14px,1.6vw,22px) "Noto Sans Thai",sans-serif;background:var(--or);color:#fff;border:0;border-radius:999px;padding:8px 18px;cursor:pointer;transition:background .2s}
+nav button:hover{background:#c46d14}
+nav button[aria-current="page"]{background:var(--mar)}
+
+/* หน้า */
+.page{display:none;min-height:60vh}
+.page.on{display:block}
+.bar{background:var(--or2);text-align:center;font-size:clamp(28px,5vw,56px);font-weight:500;padding:6px 16px;margin-top:8px}
+.bar.teal{background:var(--teal);color:#fff;text-align:left;padding:28px 40px;font-weight:700}
+
+/* หน้าแรก */
+.hero{height:clamp(260px,50vw,680px);background:
+ linear-gradient(180deg,rgba(222,127,31,.55),rgba(30,20,10,.55)),
+ linear-gradient(120deg,#e0892a,#58503f 60%,#2f5a2a);display:flex;align-items:end;color:#fff;padding:32px 40px}
+.hero p{font-size:clamp(18px,3vw,36px);font-weight:500;text-shadow:0 2px 8px #0008}
+
+/* กำหนดการศึกษา */
+.wrap{max-width:1100px;margin:0 auto;padding:28px 20px}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:640px;font-size:16px}
+th{background:#eee;padding:10px;font-weight:500}
+td{padding:8px 12px;border-bottom:1px solid #ddd;background:#f4f4f4;vertical-align:middle}
+td.r{font-weight:700;text-align:center;color:#fff;width:90px}
+.r1{background:#17566f}.r2{background:#fcc928;color:#222!important}.r3{background:#3a9fa5}.r4{background:#d6204f}
+td.c{text-align:center;font-weight:500;white-space:nowrap}
+.note{margin-top:24px}.note ol{padding-left:24px}
+.call{margin:28px auto;background:var(--teal);color:#fff;text-align:center;border-radius:28px;padding:16px;max-width:760px;font-weight:700;font-size:20px}
+
+/* หลักสูตร */
+.camp{text-align:center;font-size:22px;color:var(--or);margin:28px 0 4px}
+.fac{background:#d9d9d9;color:var(--or);text-align:center;padding:4px;font-size:18px;margin-top:10px}
+.list{text-align:center;padding:10px 0 4px;font-size:17px}
+
+/* ประกาศผล */
+.round{display:grid;grid-template-columns:90px 1fr;gap:12px;padding:26px 0;font-size:18px}
+.round b{font-weight:500}
+
+/* เอกสาร */
+.empty{display:grid;place-items:center;min-height:50vh;font-size:20px}
+
+/* สมัครเรียน */
+.apply-hero{background:linear-gradient(120deg,rgba(125,42,30,.9),rgba(60,30,10,.85)),#7d2a1e;color:#fff;padding:48px 40px;display:grid;grid-template-columns:1fr 340px;gap:32px;align-items:center}
+.apply-hero h2{font-size:clamp(28px,4vw,46px);line-height:1.25;margin:6px 0 12px}
+.apply-hero h2 em{font-style:normal;color:#ffc17a}
+.btn{display:inline-block;background:#fff;color:var(--mar);font-weight:700;border-radius:999px;padding:10px 22px;text-decoration:none;margin:14px 8px 0 0}
+.btn.ghost{background:transparent;color:#fff;border:1px solid #fff}
+.card{background:#fff;border:1px solid #ead9c9;border-radius:16px;padding:20px}
+.apply-hero .card{color:var(--ink)}
+.big{font-size:34px;font-weight:700;color:var(--mar)}
+.sec{padding:40px 0 0}.sec h3{font-size:28px;margin-bottom:4px}.sec>p{color:#666;margin-bottom:18px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.grid4 .card h4{font-size:20px}.grid4 small{color:var(--or);font-weight:500}
+.two{display:grid;grid-template-columns:1.7fr 1fr;gap:20px}
+.tl{list-style:none;margin-top:10px}
+.tl li{padding:10px 0 10px 28px;position:relative;border-left:2px solid #e6d5c4;margin-left:8px}
+.tl li::before{content:"";position:absolute;left:-8px;top:16px;width:14px;height:14px;border-radius:50%;background:#fff;border:3px solid #cbbba9}
+.tl li.now::before{background:var(--or);border-color:#f6c590}
+.tl span{color:#777;font-size:14px;display:block}
+.docs{background:var(--mar);color:#fff}
+.docs ul{list-style:none;margin:12px 0}.docs li{padding:7px 0;border-bottom:1px solid #ffffff30}
+.docs li::before{content:"✓ ";color:#ffc17a}
+.cta{background:var(--or);color:#fff;margin-top:48px;padding:44px 20px}
+.cta .wrap{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center;padding:0 20px}
+.cta .card{color:var(--ink)}
+
+/* footer */
+footer{background:#000;color:#fff;display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:24px;padding:36px 40px;align-items:center;font-size:16px}
+.klogo{background:#fff;color:#e8661c;font-weight:700;font-size:34px;padding:10px;text-align:center;border-radius:2px;max-width:260px}
+.klogo small{display:block;color:#222;font-size:10px}
+.soc{background:#4b4b4b;padding:12px;text-align:center;max-width:260px;margin-left:auto;color:#d9b49a;font-size:14px}
+.soc div{display:flex;gap:8px;justify-content:center;margin-top:6px}
+.soc i{width:30px;height:30px;border:2px solid #fff;border-radius:50%;display:grid;place-items:center;color:#fff;font-style:normal;font-size:13px}
+
+@media(max-width:800px){
+ header{padding:12px 16px}.logo{width:64px;height:64px;font-size:10px}
+ nav{padding:10px 12px;gap:8px}
+ .apply-hero,.two,.cta .wrap,footer{grid-template-columns:1fr}
+ .soc{margin:0}.bar.teal{padding:20px}
+ .round{grid-template-columns:1fr;gap:4px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
