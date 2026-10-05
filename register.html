@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ลงทะเบียน</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="form-page">
+    <header class="site-header">
+      <div class="logo-seal">
+        มจพ.
+        <br />
+        KMUTNB
+      </div>
+      <div class="site-title">
+        มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+        <strong>
+          KING MONGKUT&#39;S UNIVERSITY OF TECHNOLOGY
+          <br />
+          NORTH BANGKOK
+        </strong>
+      </div>
+    </header>
+    <main>
+      <form action="success.html" method="get">
+        <div class="form-grid">
+          <div class="field">
+            <label for="fname">ชื่อ</label>
+            <input id="fname" name="fname" type="text" required />
+          </div>
+          <div class="field">
+            <label for="lname">นามสกุล</label>
+            <input id="lname" name="lname" type="text" required />
+          </div>
+          <div class="field">
+            <label for="idcard">เลขบัตรประชาชน</label>
+            <input id="idcard" name="idcard" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email">อีเมล</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="emailpass">รหัสอีเมล</label>
+            <input id="emailpass" name="emailpass" type="password" required />
+          </div>
+          <div class="field">
+            <label for="phone">เบอร์โทรศัพท์</label>
+            <input id="phone" name="phone" type="tel" required />
+          </div>
+          <div class="field">
+            <label for="dob">วันเกิด</label>
+            <input id="dob" name="dob" type="date" required />
+          </div>
+          <div class="field">
+            <label for="school">ชื่อโรงเรียน</label>
+            <input id="school" name="school" type="text" required />
+          </div>
+          <div class="field">
+            <label for="edu">วุฒิการศึกษา</label>
+            <input id="edu" name="edu" type="text" required />
+          </div>
+          <div class="field">
+            <label for="track">สายการเรียน</label>
+            <input id="track" name="track" type="text" required />
+          </div>
+          <div class="field">
+            <label for="gpa">เกรดเฉลี่ย</label>
+            <input id="gpa" name="gpa" type="text" required />
+          </div>
+          <div class="field">
+            <label for="pass">รหัสผ่าน</label>
+            <input id="pass" name="pass" type="password" required />
+          </div>
+        </div>
+        <button class="btn-ok" type="submit">ตกลง</button>
+      </form>
+    </main>
+  </body>
+</html>

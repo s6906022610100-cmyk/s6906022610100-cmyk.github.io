@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>เข้าสู่ระบบ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="form-page">
+    <header class="site-header">
+      <div class="logo-seal">
+        มจพ.
+        <br />
+        KMUTNB
+      </div>
+      <div class="site-title">
+        มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+        <strong>
+          KING MONGKUT&#39;S UNIVERSITY OF TECHNOLOGY
+          <br />
+          NORTH BANGKOK
+        </strong>
+      </div>
+    </header>
+    <main>
+      <form action="success.html" method="get">
+        <div class="login-form">
+          <div class="field">
+            <label for="idcard">เลขบัตรประชาชน</label>
+            <input id="idcard" name="idcard" type="text" required />
+          </div>
+          <div class="field">
+            <label for="pass">รหัสผ่าน</label>
+            <input id="pass" name="pass" type="password" required />
+          </div>
+        </div>
+        <button class="btn-ok" type="submit">ตกลง</button>
+      </form>
+    </main>
+  </body>
+</html>
