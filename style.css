@@ -52,14 +52,7 @@ main {
   height: 96px;
   border-radius: 50%;
   background: #fff;
-  border: 5px solid #b8321f;
-  display: grid;
-  place-items: center;
-  color: #b8321f;
-  font-weight: 700;
-  font-size: 1.05rem;
-  text-align: center;
-  line-height: 1.1;
+  object-fit: contain;
 }
 .site-title {
   font-size: 1.2rem;
@@ -173,19 +166,26 @@ main {
       rgba(255, 80, 30, 0.55) 40px,
       transparent 160px
     ),
-    linear-gradient(#e8872b 0%, #f0a04a 40%, #c9702a 62%, #2e5a22 63%, #3f7a2b 100%);
+    linear-gradient(#e8872b 0%, #f0a04a 55%, #c9702a 100%);
 }
 .hero .wall {
+  position: relative;
+  z-index: 0;
   width: 100%;
-  background: #37393d;
   color: #f1c40f;
   padding: 34px 40px;
-  transform: skewY(-4deg);
-  transform-origin: left bottom;
   font-weight: 800;
   font-size: 2rem;
   line-height: 1.3;
-  font-style: italic;
+}
+/* แถบสีเทาเอียง แยกออกมาเป็นชั้นหลัง เพื่อให้ตัวหนังสือตรง */
+.hero .wall::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #37393d;
+  transform-origin: left bottom;
 }
 .hero .wall small {
   display: block;
